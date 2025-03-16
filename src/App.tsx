@@ -328,19 +328,19 @@ function App() {
               />
             </Form.Group>
             <Form.Group className="mb-3">
-              <Form.Label>Hora (1-24)</Form.Label>
+              <Form.Label>Hora (8-21)</Form.Label>
               <Form.Control
                 type="number"
                 name="hour"
                 value={newReservation.hour}
                 onChange={handleInputChange}
-                min={1}
-                max={24}
+                min={8}
+                max={21}
                 required
               />
-              {newReservation.hour < 1 || newReservation.hour > 24 ? (
+              {newReservation.hour < 8 || newReservation.hour > 21 ? (
                 <Form.Text className="text-danger">
-                  La hora debe estar entre 1 y 24.
+                  La hora debe estar entre 8 y 21.
                 </Form.Text>
               ) : null}
             </Form.Group>
