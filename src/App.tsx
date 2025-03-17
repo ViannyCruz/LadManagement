@@ -241,6 +241,7 @@ function App() {
                 <tr>
                   <th scope="col">Fecha</th>
                   <th scope="col">Hora</th>
+                  <th scope="col">ID Estudiante</th>{" "}
                   <th scope="col">Estudiante</th>
                   <th scope="col">Email</th>
                   <th scope="col">Laboratorio</th>
@@ -252,6 +253,7 @@ function App() {
                   <tr key={reservation.reservation_id}>
                     <td>{reservation.date}</td>
                     <td>{reservation.hour}</td>
+                    <td>{reservation.student_id}</td>
                     <td>{reservation.name}</td>
                     <td>{reservation.email}</td>
                     <td>{reservation.lab}</td>
